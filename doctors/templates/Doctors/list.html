@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block body%}
+
+      <h1> Doctors List </h1>
+
+  {% for doctors in doctor_list %}
+
+
+  <h2> <a href= "{% url 'doctors:doctor_detail' doctors.slug %}" > {{ doctors }}  </a> </h2>
+
+    {% endfor %}
+
+
+
+
+{% endblock body%}
+
+

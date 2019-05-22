@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block body %}
+<body>
+  <center>
+    
+      <fieldset>
+        <table>
+          <h1>Booking</h1>
+
+          <form action="" method="POST">
+          
+          {% csrf_token %}
+          {{ form }} 
+          <button type="submit" class = "btn btn-primary">Submit </button> 
+    
+        
+        </table>
+      </fieldset> 
+        
+
+        
+  </center>
+</body>
+{% endblock body %}

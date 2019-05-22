@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block body%}
+
+<h1> Doctor Detaiil </h1>
+
+<h2> {{ doctor_detail.name}} </h2>
+
+<h3> {{ doctor_detail.specialization }} </h3>
+
+<h4> {{ doctor_detail.description}} </h4>
+
+<img src="{{doctor_detail.image.url}}" alt="">
+
+
+
+
+
+{% endblock body%}
+

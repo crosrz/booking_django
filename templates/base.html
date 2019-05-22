@@ -1,0 +1,78 @@
+
+{% load static %}
+<!DOCTYPE HTML>
+<head>
+  <title>BookMed | Online Appointment System</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'site_static/style.css ' %}" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+      	<div class="logo-img">
+        <img src="{% static 'site_static/logo.png ' %} ">
+         </div>
+        <div class="logo-text">
+      	<h2>BookMed - Online Booking Portal</h2>
+      </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="{% url 'home:home' %}">Home</a></li>
+          <li><a href="{% url 'about_us:about_us_list' %}">About Us</a></li>
+          <li><a href="{% url 'doctors:doctor_list' %}">Doctors</a></li>
+          <li><a href="{% url 'booking:book_doctor' %}">Book Doctor</a></li>
+          <li><a href="{% url 'contact_us:send_email' %}">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+
+
+    <div id="site_content">
+
+
+    <div id="banner">
+    	<div class="banner-img">
+    		<img src="{% static 'site_static/banner.png ' %} ">
+    	</div>
+    </div>
+
+    <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Latest News</h3>
+            <h4>Home Page Setup</h4>
+            <h5>Apr 10, 2019</h5>
+            <p>Discussion on new homepage layout.</p>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="https://ama.com.au/">Medial Association Australia</a></li>
+              <li><a href="https://www.police.nsw.gov.au/">NSW Police </a></li>
+              <li><a href="https://www.healthcareaustralia.com.au">Health Care Australia</a></li>
+              <li><a href="http://www.health.gov.au/">Department of Health</a></li>
+              <li> </li>
+              <li> </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+{% block body%}
+
+
+{% endblock %}
+   
+
+
+
