@@ -127,7 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-STATIC_ROOT= '/home/ubuntu/booking_django/bookmed/static'
+STATIC_ROOT= '/home/ubuntu/booking_django/bookmed/static '
 
 
 STATICFILES_DIRS = [
