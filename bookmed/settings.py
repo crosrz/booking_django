@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ef$8$2h(ak3i(w6g3y0e-f=^dxo2uv0k-=7@vzl(vu9@mzi3je'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'bookmed.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join (BASE_DIR, 'bookmed/templates')],
+        'DIRS': [os.path.join (BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,11 +130,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-STATIC_ROOT= '/home/ubuntu/booking_django/bookmed/static '
-
-
-STATICFILES_DIRS = [
+STATIC_ROOT = [
     os.path.join(BASE_DIR, 'static/'),
 ]
 
